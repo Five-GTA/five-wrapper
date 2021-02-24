@@ -1,0 +1,32 @@
+{
+  "name": "five-wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint" : "eslint src/**",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Five-GTA/five-wrapper.git"
+  },
+  "author": "Arthur L (arthurifccl@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Five-GTA/five-wrapper/issues"
+  },
+  "homepage": "https://github.com/Five-GTA/five-wrapper#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "typescript": "^4.2.2"
+  }
+}
