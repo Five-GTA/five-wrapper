@@ -1,10 +1,5 @@
-import { Events } from "./events/Events";
-import { EventGroup } from "./events/groups/EventGroup";
-import { UIEventGroup } from "./events/groups/UIEventGroup";
-import { UI } from "./events/UI";
-
-export { Events };
-export { EventGroup };
-export { UI };
-export { UIEventGroup };
+export { Events } from "./events/Events";
+export { EventGroup } from "./events/groups/EventGroup";
+export { UIEventGroup } from "./events/groups/UIEventGroup";
+export { UI } from "./events/UI";
 
