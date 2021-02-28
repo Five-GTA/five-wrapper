@@ -3,5 +3,5 @@ export function L(key:string): string {
     if(!locale){
         return key;
     }
-    return locale.get(key);
+    return locale.locale(key);
 }
